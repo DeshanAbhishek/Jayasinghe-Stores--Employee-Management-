@@ -1,0 +1,116 @@
+.payroll{
+    margin-top: 100px;
+}
+
+.payroll-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+}
+
+.payroll-items-title{
+    margin: 10px 0px;
+    color: black;
+}
+
+.payroll-items-title img{
+    width: 70px;
+}
+
+.payroll hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.payroll-items-title .cross{
+    cursor: pointer;
+}
+
+.payroll-items-title input{
+    width: 120px;
+}
+
+.payroll-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.payroll-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payroll-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.payroll-total hr{
+    margin: 10px 0px;
+}
+
+.payroll-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payroll-checkout{
+    flex: 1;
+}
+
+.payroll-checkout p{
+    color: #555;
+}
+
+.payroll-checkout-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.payroll-checkout-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.payroll-checkout-input button{
+    width: max(10vw, 150px);
+    padding: 12px, 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.cross{
+    width: 80px;
+    height: 25px;
+}
+
+@media (max-width:750px){
+    .payroll-bottom{
+        flex-direction: column-reverse;
+    }
+
+    .payroll-checkout{
+        justify-content: start;
+    }
+}

@@ -1,0 +1,73 @@
+.place-payment{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-payment-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.place-payment-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.place-payment-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+
+.place-payment-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-payment-button {
+    background-color: tomato; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .download-pdf {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+  
+  .download-pdf button {
+    background-color: tomato; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .download-pdf button:hover {
+    background-color: tomato; /* Darker green on hover */
+  }
+  
+  

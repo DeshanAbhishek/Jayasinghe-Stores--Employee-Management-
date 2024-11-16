@@ -1,0 +1,87 @@
+.add-job-posting {
+    width: 70%;
+    margin: 50px auto;
+    color: #6d6d6d; /* Text color */
+    font-size: 16px; /* Base font size */
+}
+
+.add-job-posting form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.add-job-title,
+.add-job-description,
+.add-job-salary,
+.add-job-location,
+.add-job-closing-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-job-title input,
+.add-job-description textarea,
+.add-job-salary input,
+.add-job-location input,
+.add-job-closing-date input {
+    padding: 10px; /* Increased padding for input fields */
+    width: 100%; /* Full width of the parent */
+    margin-top: 10px; /* Margin for better spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.add-job-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-job-category select {
+    max-width: 200px; /* Max width for dropdown */
+    padding: 10px; /* Padding for dropdown */
+    margin-top: 10px; /* Margin for dropdown */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.add-btn {
+    padding: 10px 20px; /* Button padding */
+    background-color: tomato; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.add-btn:hover {
+    background-color: #d05444; /* Darker tomato on hover */
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.add-btn:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+.add-job-title p,
+.add-job-description p,
+.add-job-salary p,
+.add-job-category p,
+.add-job-location p,
+.add-job-closing-date p {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+@media (max-width: 768px) {
+    .add-job-posting {
+        width: 90%; /* Full width on smaller screens */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+    .add-btn {
+        width: 100%; /* Full width button on smaller screens */
+    }
+}

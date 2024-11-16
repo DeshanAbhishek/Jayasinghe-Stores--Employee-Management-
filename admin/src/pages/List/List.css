@@ -1,0 +1,219 @@
+.list-table {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+.list-table-format {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #cacaca;
+    font-size: 14px;
+    transition: background-color 0.2s; /* Smooth transition for hover effects */
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    border-bottom: 2px solid tomato;
+}
+
+.list-table-format:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.list-table-format img {
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.list-table-format > div {
+    flex: 1; /* Distribute space evenly */
+    padding: 5px; /* Add padding for better spacing */
+}
+
+.list-table-format .actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.list-table-format .actions button {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth transition for button hover */
+}
+
+.list-table-format .actions button:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+
+.edit-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto; /* Center form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h3 {
+    text-align: center;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth transition for button hover */
+}
+
+.button-container button[type='submit'] {
+    background-color: tomato;
+    color: white;
+}
+
+.button-container button[type='submit']:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+
+.button-container button[type='button'] {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.button-container button[type='button']:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        flex-direction: column; /* Stack items on small screens */
+    }
+    
+    .list-table-format img {
+        margin-bottom: 10px; /* Space below image when stacked */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons on small screens */
+    }
+
+    .button-container button {
+        margin-left: 0; /* Remove left margin when stacked */
+        margin-bottom: 10px; /* Space below buttons */
+    }
+
+    .button-container button[type='button'] {
+        margin-left: 0; /* Reset margin for cancel button */
+    }
+}
+
+.edit-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the select box */
+    font-size: 14px; /* Ensure consistent font size */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="tomato" d="M0 0h10L5 5z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the custom arrow */
+    background-size: 10px; /* Size of the custom arrow */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: border-color 0.2s; /* Smooth transition for border color */
+}
+
+.edit-form select:focus {
+    border-color: tomato; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.edit-form select:hover {
+    border-color: darkred; /* Darker border on hover */
+}
+
+/* List.css */
+
+/* Styles for the action buttons in the employee list */
+.list-table-format .actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .list-table-format button {
+    background-color: tomato; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Align inline */
+    font-size: 14px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect for the action buttons */
+  .list-table-format button:hover {
+    background-color: tomato; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+  }
+  
+  /* Styles for the edit form buttons */
+  .edit-form {
+    margin-top: 20px; /* Space above the edit form */
+  }
+  
+  .edit-form button[type='submit'] {
+    background-color: tomato; /* Blue background for update button */
+  }
+  
+  .edit-form button[type='submit']:hover {
+    background-color: tomato; /* Darker blue on hover */
+  }
+  
+  .edit-form button[type='button'] {
+    background-color: tomato; /* Red background for cancel button */
+  }
+  
+  .edit-form button[type='button']:hover {
+    background-color: tomato
+    ; /* Darker red on hover */
+  }
+  
+  /* Optional: Add some margin to the buttons in the edit form */
+  .edit-form .button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+

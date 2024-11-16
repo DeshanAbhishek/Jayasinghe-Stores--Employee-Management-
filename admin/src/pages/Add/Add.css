@@ -1,0 +1,157 @@
+.add {
+    width: 70%;
+    margin: 50px auto;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-img-upload img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.add-employee-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.add-employee-name, 
+.add-employee-description {
+    flex: 1;
+}
+
+.add-employee-name input, 
+.add-employee-description input {
+    padding: 10px;
+    width: 100%;
+}
+
+.add-category-salary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.add-category, 
+.add-basicSalary, 
+.add-employee-dob {
+    flex: 1;
+}
+
+.add-category select, 
+.add-basicSalary input,
+.add-employee-dob input {
+    max-width: 120px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-btn {
+    padding: 10px 20px; /* Increased padding for a better look */
+    background-color: tomato; /* Green background color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.add-btn:hover {
+    background-color: tomato; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.add-btn:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.add-employee-nic input {
+    max-width: 180px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-employee-contact input {
+    max-width: 180px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-employee-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .add-employee-submit .btn-add {
+    background-color: tomato; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default borders */
+    padding: 12px 24px; /* Add padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .add-employee-submit .btn-add:hover {
+    background-color: tomato; /* Darker green on hover */
+  }
+  
+  .add-employee-submit .btn-add:active {
+    background-color: tomato; /* Even darker green when active (clicked) */
+    transform: scale(0.98); /* Slight shrink on click */
+  }
+  
+  .add-employee-submit .btn-add:disabled {
+    background-color: #ccc; /* Gray background when disabled */
+    cursor: not-allowed; /* Not-allowed cursor when disabled */
+  }
+  
+  @media (max-width: 600px) {
+    .add-employee-submit .btn-add {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  
+
+/* Ensuring all submit buttons have the same styling */
+.add-submit-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-btn:hover {
+    background-color: #d35400;
+}
+
+.add-btn:active {
+    transform: scale(0.98);
+}
